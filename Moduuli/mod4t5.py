@@ -1,14 +1,13 @@
-tunnus="python"
-salasana="rules"
-toistot=5
+tunnus=""
+salasana=""
 yritykset=0
 
-while (tunnus=="python" and salasana=="rules") and yritykset<toistot:
-    tunnus=("Annan käyttäjätunnus:")
+while not (tunnus=="python" and salasana=="rules") and yritykset<5:
+    tunnus=input("Annan käyttäjätunnus:")
     salasana=input("Anna salasana:")
     yritykset=yritykset+1
 
-if (yritykset>=5):
+if (yritykset==5):
     print("Pääsy evätty")
 
 else:
