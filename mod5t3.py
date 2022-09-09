@@ -4,7 +4,7 @@ for luku in range(5):
      kaupungit.append(kaupunki)
 
 for n in kaupungit:
-    print({n})
+    print(n)
 
 
 
