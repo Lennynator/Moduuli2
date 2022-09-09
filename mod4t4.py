@@ -1,5 +1,5 @@
 import random
-numero=random.randint(1,6)
+numero=random.randint(1,10)
 arvaus=""
 while not arvaus==numero:
     arvaus=int(input("Arvaa numero: "))
