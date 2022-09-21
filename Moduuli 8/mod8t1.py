@@ -17,7 +17,10 @@ yhteys =mysql.connector.connect(
          password='Torstai22#',
          autocommit=True
          )
-kentta=input("Anna ICAO koodi: ")
-if kentta is not None:
-    print(f'Nimi: {kentta[0]}, kunta:  {kentta[1]}')
-else:print("Ei ICAO koodi")
+kentta=""
+while True:
+    kentta=haelentokentta(input("Anna ICAO-koodi: "))
+    if kentta is not None:
+        print(kentta)
+    else:
+        print("Ei ICAO koodi")
